@@ -1,4 +1,4 @@
-package M226A;
+package AB05;
 import java.util.Scanner;
 
 public class Rechner {
