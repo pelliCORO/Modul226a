@@ -46,23 +46,14 @@ public class Rechner {
 
     public int calc(){
 
-
-        switch (opp) {
-
-            default:
-                
-            case 1:
-                return zahl1+zahl2;
-            case 2:
-                return zahl1-zahl2;
-            case 3:
-                return zahl1*zahl2;
-            case 4:
-                return zahl1/zahl2;
-            case 5:
-                return zahl1%zahl2;
-
-        }
+        return switch (opp) {
+            case 1 -> zahl1 + zahl2;
+            case 2 -> zahl1 - zahl2;
+            case 3 -> zahl1 * zahl2;
+            case 4 -> zahl1 / zahl2;
+            case 5 -> zahl1 % zahl2;
+            default -> throw new IllegalStateException("Unexpected value: " + opp);
+        };
 
 
     }

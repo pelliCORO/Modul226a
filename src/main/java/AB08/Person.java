@@ -5,23 +5,18 @@ package AB08;
  */
 public class Person {
 
-    private String firstName;
-    private String lastName;
+    public String firstName;
+    public String lastName;
 
-    /**
-     * Erstellen einer neuen Person
-     *
-     * @param firstName Vorname
-     * @param lastName  Nachname
-     */
+
+
     public Person(String firstName, String lastName) {
-
-        firstName = firstName;
-        lastName = lastName;
-
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
+
         return firstName;
     }
 
