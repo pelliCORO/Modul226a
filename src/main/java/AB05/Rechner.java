@@ -1,28 +1,50 @@
 package AB05;
 import java.util.Scanner;
 
+
+
 public class Rechner {
+
+    public int zahl1;
+    public int zahl2;
+    public int opp;
+
     public static void main(String[] args) {
-    System.out.println(calc());
+        Rechner rechner = new Rechner();
+    rechner.benutzereingabe();
+    System.out.println(rechner.calc());
     }
 
-    public static int calc(){
 
-        int Ergebnis=0;
+    public  void benutzereingabe(){
 
         Scanner operator_eins = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Geben sie eine Zahl ein:");
-        int zahl1 = operator_eins.nextInt();  // Read user input
+        zahl1 = operator_eins.nextInt();  // Read user input
 
         Scanner operator_zwei = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Geben sie eine zweite Zahl ein:");
-        int zahl2 = operator_zwei.nextInt();  // Read user input
+        zahl2 = operator_zwei.nextInt();  // Read user input
 
         Scanner opperations_zeichen = new Scanner(System.in);
         System.out.println("Geben sie einen Operand ein");
-        int opp = operator_zwei.nextInt();  // Read user input
+        opp = opperations_zeichen.nextInt();  // Read user input
 
+    }
 
+    public void setZahl1(int zahl1) {
+        this.zahl1 = zahl1;
+    }
+
+    public void setZahl2(int zahl2) {
+        this.zahl2 = zahl2;
+    }
+
+    public void setOpp(int opp) {
+        this.opp = opp;
+    }
+
+    public int calc(){
 
 
         switch (opp) {
@@ -40,11 +62,7 @@ public class Rechner {
             case 5:
                 return zahl1%zahl2;
 
-
-
-
         }
-
 
 
     }
