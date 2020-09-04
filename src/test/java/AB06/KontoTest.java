@@ -15,10 +15,17 @@ class KontoTest {
     }
 
     @Test
-    void einzahlen() {
+    void einzahlen500() {
         konto.einzahlen(500);
         assertEquals(1000,konto.getSaldo());
     }
+
+    @Test
+    void einzahlen200() {
+        konto.einzahlen(200);
+        assertEquals(700,konto.getSaldo());
+    }
+
 
     @Test
     void verzinsen() {

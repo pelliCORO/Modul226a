@@ -44,6 +44,7 @@ public class Rechner {
         this.opp = opp;
     }
 
+
     public int calc(){
 
         return switch (opp) {

@@ -1,4 +1,4 @@
-package Mastermind;
+package minesweeper;
 
 public class UserInterface {
 }
